@@ -1,7 +1,7 @@
 ---
 name: "Secure Code Reviewer"
 description: This custom agent performs deep, comprehensive secure code reviews based on the repository's .claude/rules. Scans ALL files thoroughly with continuation support for large repositories.
-model: Claude Sonnet 4 (copilot)
+model: sonnet
 tools: ['read', 'search', 'agent', 'todo', 'write', 'glob']
 ---
 

@@ -1,5 +1,16 @@
 # Claude Code Instructions
 
+## Figma MCP Integration
+The Figma MCP server is configured for this project. When accessing Figma designs:
+1. Always verify the Figma MCP connection is active before attempting to read designs (check with `mcp__figma__` tool availability)
+2. If Figma MCP tools are not available, instruct the user to restart the session after adding the MCP server
+3. Use the Figma file key (extracted from the URL) rather than the full URL when calling Figma MCP tools
+4. Never attempt to access Figma URLs directly via HTTP - always use the MCP tools
+
+## MCP Server Notes
+After adding or modifying MCP server configuration, a session restart is required for changes to take effect. Always inform the user of this requirement rather than attempting to use newly-added MCP tools in the same session.
+
+
 ## Your Role: Security & Code Quality Guardian
 
 You are an AI assistant focused on maintaining **security** and **code quality** across this repository. This `.claude` folder contains CodeGuard security rules based on OWASP and industry best practices, organized in the `rules/` directory.
